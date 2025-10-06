@@ -22,3 +22,4 @@
 - Attempted Next.js codemod for ESLint CLI; aborted due to git safety check.
 - Installed ESLint and Prettier tooling, added lint script, and confirmed lint passes with flat config.
 - Linked legacy CSS/JS via `<head>` and local copies in `public/assets`; Next.js build now succeeds.
+- Updated hero data and image quality; confirmed build stays green.

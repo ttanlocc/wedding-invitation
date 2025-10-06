@@ -46,6 +46,7 @@ export default function IntroSection({ name, to, heroes }: IntroSectionProps) {
                 priority={index === 0}
                 sizes="100vw"
                 className="object-cover"
+                quality={90}
               />
             </div>
           ))}
