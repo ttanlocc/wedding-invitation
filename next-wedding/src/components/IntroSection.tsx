@@ -57,12 +57,12 @@ export default function IntroSection({ name, to, heroes }: IntroSectionProps) {
         <div className="column">
           <div className="text-pretitle">The Wedding</div>
           <h1 className="text-huge-title">{name}</h1>
-          <div className="text-pretitle">
+          <div className="text-pretitle" style={{ zIndex: 2 }}>
             Dear: <span className="font-bold text-white">{to}</span>
             <br />We are inviting you to the wedding
             <br />
             <br />
-            <a href="#details" className="btn--stroke2 btn--small smoothscroll">
+            <a href="#details" className="btn btn--stroke smoothscroll" style={{ display: 'inline-block' }}>
               Open Invitation
             </a>
           </div>

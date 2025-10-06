@@ -23,3 +23,4 @@
 - Installed ESLint and Prettier tooling, added lint script, and confirmed lint passes with flat config.
 - Linked legacy CSS/JS via `<head>` and local copies in `public/assets`; Next.js build now succeeds.
 - Updated hero data and image quality; confirmed build stays green.
+- Restored TabSection to page, removed redundant script injection, and confirmed lint/build succeed.

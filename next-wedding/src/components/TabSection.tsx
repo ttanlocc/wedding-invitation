@@ -62,7 +62,7 @@ export default function TabSection({
   to,
 }: TabSectionProps) {
   return (
-    <section id="details" className="s-details">
+    <section id="details" className="s-details" style={{ backgroundColor: "transparent" }}>
       <div className="row">
         <div className="column">
           <nav className="tab-nav">
@@ -96,7 +96,7 @@ export default function TabSection({
           </nav>
 
           <div className="tab-content">
-            <div id="tab-couple" className="tab-content__item text-center" data-tab-active>
+            <div id="tab-couple" className="tab-content__item text-center" data-tab-active aria-hidden="false">
               <div className="row">
                 <div className="column">
                   <div className="row">
