@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Wedding Invitations",
@@ -22,12 +21,6 @@ export default function RootLayout({
       </head>
       <body className="theme-slides ss-preload" id="top">
         {children}
-        <Script src="/assets/js/plugins.js" strategy="afterInteractive" />
-        <Script src="/assets/js/main.js" strategy="afterInteractive" />
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js" strategy="afterInteractive" />
-        <Script id="baguette-init" strategy="afterInteractive">
-          {`if (window?.baguetteBox) { baguetteBox.run('.tz-gallery'); }`}
-        </Script>
       </body>
     </html>
   );

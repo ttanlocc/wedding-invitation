@@ -1,6 +1,6 @@
 import IntroSection from "@/components/IntroSection";
+import TabSection from "@/components/TabSection";
 import { weddingData } from "@/data/sampleData";
-import Script from "next/script";
 
 export default function Home() {
   return (
@@ -11,7 +11,15 @@ export default function Home() {
         heroes={weddingData.heroes}
       />
 
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js" strategy="afterInteractive" />
+      <TabSection
+        brides={weddingData.brides}
+        details={weddingData.details}
+        galleries={weddingData.galleries}
+        thanks={weddingData.thanks}
+        gifts={weddingData.gifts}
+        banks={weddingData.banks}
+        to={weddingData.to}
+      />
     </>
   );
 }

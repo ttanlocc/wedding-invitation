@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import "baguettebox.js/dist/baguetteBox.min.css";
 
 type Bride = {
@@ -62,18 +61,6 @@ export default function TabSection({
   banks,
   to,
 }: TabSectionProps) {
-  useEffect(() => {
-    // Initialize tab functionality from legacy script
-    const script = document.createElement("script");
-    script.src = "/assets/undangan/js/main.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <section id="details" className="s-details">
       <div className="row">
