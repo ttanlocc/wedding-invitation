@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Legacy theme overrides to ensure visibility in Next.js build */
+.s-intro__content { z-index: 2; }
+.s-details { 
+  --overlay-opacity: 0 !important; 
+  bottom: auto !important; 
+  background: transparent !important;
+}
+.s-details::before { opacity: 0 !important; }
+.btn, .btn--stroke, .btn--stroke2 { display: inline-block; }
